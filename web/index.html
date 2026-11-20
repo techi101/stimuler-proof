@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stimuler Review Pulse</title>
+<meta name="description" content="What unhappy Stimuler reviewers say on Google Play and the App Store India, grouped by theme with real quotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brand:#6d28d9; --brand-soft:#f1ebfd; --brand-ink:#5b21b6;
+  --ink:#0f172a; --ink2:#334155; --muted:#64748b; --line:#e5e7eb; --soft:#f8fafc; --bg:#ffffff;
+  --neutral:#cbd5e1; --star:#f59e0b;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--brand-ink)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.bar{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:5}
+.bar .wrap{display:flex;align-items:center;gap:12px;height:56px}
+.logo{width:28px;height:28px;border-radius:7px;background:var(--brand);display:grid;place-items:center;flex:none}
+.prod{font-weight:600;white-space:nowrap}
+.prod small{color:var(--muted);font-weight:500;margin-left:6px}
+.bar nav{margin-left:auto;display:flex;gap:18px;font-size:14px}
+.bar nav a{color:var(--ink2);text-decoration:none}
+.bar nav a:hover{color:var(--brand)}
+.hero{padding:40px 0 28px;display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center}
+.eyebrow{display:inline-flex;font-size:13px;font-weight:600;color:var(--brand-ink);background:var(--brand-soft);padding:4px 10px;border-radius:999px}
+h1{font-size:34px;line-height:1.18;letter-spacing:-.02em;margin:14px 0 12px}
+.lede{font-size:17px;color:var(--ink2);margin:0 0 16px;max-width:60ch}
+.meta{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:12.5px;color:var(--ink2);border:1px solid var(--line);border-radius:999px;padding:3px 10px;background:#fff;white-space:nowrap}
+.card{border:1px solid var(--line);border-radius:12px;background:#fff;padding:16px}
+.card h3{margin:0 0 4px;font-size:15px}
+.hint{margin:0 0 14px;color:var(--muted);font-size:13px}
+/* column chart */
+.cols{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;align-items:end;height:190px;padding-top:8px;border-bottom:1px solid var(--line)}
+.col{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;cursor:default}
+.col .v{font-size:13px;font-weight:600;margin-bottom:4px;font-variant-numeric:tabular-nums}
+.col .b{width:100%;max-width:56px;background:var(--brand);border-radius:4px 4px 0 0}
+.col:not(.last) .b{background:#b9a3ee}
+.xl{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;font-size:12px;color:var(--muted);text-align:center;margin-top:6px}
+.xl b{display:block;color:var(--ink2);font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:8px 0 12px}
+.stat .label{font-size:13px;color:var(--muted);font-weight:500}
+.stat .value{font-size:28px;font-weight:700;letter-spacing:-.02em;margin:4px 0 2px;font-variant-numeric:tabular-nums}
+.stat .sub{font-size:12.5px;color:var(--muted)}
+.stat.hl{border-color:var(--brand);box-shadow:inset 0 0 0 1px var(--brand)}
+.stat.hl .value{color:var(--brand-ink)}
+.caveat{display:flex;gap:10px;font-size:13.5px;color:var(--ink2);background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin-bottom:36px}
+.caveat i{font-style:normal;font-weight:700;color:var(--muted)}
+section{margin:0 0 40px}
+.sh{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+h2{font-size:21px;letter-spacing:-.01em;margin:0}
+.sh p{margin:4px 0 0;color:var(--muted);font-size:14px}
+.tabs{display:inline-flex;border:1px solid var(--line);border-radius:9px;padding:3px;background:var(--soft);gap:2px}
+.tabs button{border:0;background:transparent;font:inherit;font-size:13.5px;padding:6px 12px;border-radius:7px;color:var(--ink2);cursor:pointer}
+.tabs button[aria-selected=true]{background:#fff;color:var(--ink);font-weight:600;box-shadow:0 1px 2px rgba(15,23,42,.08)}
+.tabs .c{color:var(--muted);font-weight:500;margin-left:4px}
+/* theme explorer */
+.explorer{display:grid;grid-template-columns:1.05fr 1fr;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.tlist{border-right:1px solid var(--line)}
+.thead{display:grid;grid-template-columns:1fr 64px 56px;gap:10px;padding:10px 16px;background:var(--soft);font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.trow{display:grid;grid-template-columns:1fr 64px 56px;gap:10px;align-items:center;padding:10px 16px;border:0;border-top:1px solid var(--line);cursor:pointer;width:100%;background:#fff;border-left:3px solid transparent;font:inherit;text-align:left;color:inherit}
+.trow:hover{background:#fbfaff}
+.trow[aria-pressed=true]{background:var(--brand-soft);border-left-color:var(--brand)}
+.trow .n{font-size:14px;font-weight:500}
+.trow .track{height:6px;margin-top:6px;background:transparent}
+.trow .fill{height:6px;border-radius:0 3px 3px 0;background:var(--brand);min-width:2px}
+.trow .num{text-align:right;font-variant-numeric:tabular-nums;font-weight:600;font-size:14px}
+.trow .pct{text-align:right;font-variant-numeric:tabular-nums;color:var(--muted);font-size:13px}
+.detail{padding:20px;background:#fff}
+.detail h3{font-size:18px;margin:0 0 6px}
+.kv{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 16px}
+.kv span{font-size:12.5px;background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:5px 9px;color:var(--ink2)}
+.kv b{color:var(--ink)}
+.quote{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px}
+.quote p{margin:0 0 8px;font-size:14.5px;color:var(--ink)}
+.qm{display:flex;gap:10px;font-size:12.5px;color:var(--muted);align-items:center}
+.stars{color:var(--star);letter-spacing:1px}
+.stars .off{color:#e2e8f0}
+.empty{color:var(--muted);font-size:14px}
+/* bars */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.hbar{display:grid;grid-template-columns:170px 1fr 70px;gap:10px;align-items:center;margin:8px 0;font-size:13.5px}
+.hbar .t{color:var(--ink2)}
+.hbar .track{height:14px}
+.hbar .fill{height:14px;border-radius:0 4px 4px 0;background:var(--brand);min-width:3px}
+.hbar .v{font-variant-numeric:tabular-nums;font-weight:600;text-align:right}
+.hbar .v small{color:var(--muted);font-weight:500}
+.foot{margin-top:12px;padding-top:12px;border-top:1px solid var(--line);font-size:13px;color:var(--ink2)}
+.alert-top{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:6px 0 12px}
+.alert-top div{font-size:13px;color:var(--muted)}
+.alert-top b{display:block;font-size:22px;color:var(--ink);font-variant-numeric:tabular-nums}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;font-size:12px;color:var(--muted);font-weight:600;padding:6px 0;border-bottom:1px solid var(--line)}
+td{padding:6px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+td.r,th.r{text-align:right}
+.up{color:var(--brand-ink);font-weight:600}
+#tip{position:fixed;pointer-events:none;background:var(--ink);color:#fff;font-size:12.5px;padding:6px 9px;border-radius:6px;opacity:0;transition:opacity .1s;z-index:20;max-width:260px}
+.next{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.next .card b{display:block;margin-bottom:6px}
+.next .card p{margin:0 0 10px;color:var(--ink2);font-size:14px}
+.next .k{font-size:12px;color:var(--brand-ink);font-weight:600;margin-bottom:8px;display:block}
+.next .m{font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:8px;margin:0}
+footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:13px}
+footer ul{margin:6px 0 0;padding-left:18px}
+code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;background:var(--soft);border:1px solid var(--line);border-radius:4px;padding:0 4px}
+@media (max-width:1000px){
+  .hero{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stats .stat.hl{grid-column:1/-1;order:-1}
+  .grid2,.explorer{grid-template-columns:1fr}
+  .next{grid-template-columns:1fr 1fr}
+  .tlist{border-right:0;border-bottom:1px solid var(--line)}
+}
+@media (max-width:640px){
+  .wrap{padding:0 16px}
+  .bar nav{display:none}
+  .prod small{display:none}
+  h1{font-size:26px}
+  .lede{font-size:15.5px}
+  .next{grid-template-columns:1fr}
+  .hbar{grid-template-columns:120px 1fr 60px;gap:8px}
+  .cols{height:160px;gap:6px}
+  .xl{gap:6px;font-size:11px}
+  .detail{padding:16px}
+  .alert-top{grid-template-columns:1fr 1fr}
+  .sh .tabs{width:100%}
+  .sh .tabs button{flex:1}
+}
+</style>
+</head>
+<body>
+<div class="bar"><div class="wrap">
+  <div class="logo"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 12V8M6 12V4M10 12V6M14 12V2" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div>
+  <div class="prod">Review Pulse <small>Stimuler · Google Play + App Store India</small></div>
+  <nav><a href="#themes">Themes</a><a href="#happy">Happy users</a><a href="#alert">Weekly alert</a><a href="#next">What to test</a></nav>
+</div></div>
+
+<main class="wrap">
+  <div class="hero">
+    <div>
+      <span class="eyebrow">App review intelligence · Stimuler (com.stimuler)</span>
+      <h1>A third of unhappy reviewers say they paid, and the store reply sends them back to email</h1>
+      <p class="lede" id="lede"></p>
+      <div class="meta" id="meta"></div>
+    </div>
+    <div class="card">
+      <h3>Good news first: fewer angry reviews every half year</h3>
+      <p class="hint">Share of Google Play reviews at 1 to 2 stars, by half year</p>
+      <div class="cols" id="cols"></div>
+      <div class="xl" id="xl"></div>
+    </div>
+  </div>
+
+  <div class="stats" id="stats"></div>
+  <div class="caveat"><i>i</i><div id="cav"></div></div>
+
+  <section id="themes">
+    <div class="sh">
+      <div><h2>What unhappy reviewers are about</h2><p>1 to 2 star reviews with 5+ words, tagged by theme. A review can hit several themes. Click a theme to read real reviews.</p></div>
+      <div class="tabs" role="tablist" id="src"></div>
+    </div>
+    <div class="explorer">
+      <div class="tlist" id="tlist"></div>
+      <div class="detail" id="detail" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="happy">
+    <div class="grid2">
+      <div class="card">
+        <h3>What happy reviewers talk about</h3>
+        <p class="hint" id="happy-hint"></p>
+        <div id="praise"></div>
+        <div class="foot" id="liked"></div>
+      </div>
+      <div class="card" id="alert">
+        <h3>Weekly review alert, sample run</h3>
+        <p class="hint" id="alert-hint"></p>
+        <div class="alert-top" id="alert-top"></div>
+        <table><thead><tr><th>Theme</th><th class="r">This week</th><th class="r">Avg week, 4 before</th></tr></thead><tbody id="alert-rows"></tbody></table>
+        <div class="foot" id="alert-foot"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="next">
+    <div class="sh"><div><h2>What I'd test next</h2><p>Each one ties to a finding above and has a number to watch.</p></div></div>
+    <div class="next">
+      <div class="card"><span class="k">1 · Paying users</span><b>Paid user fast lane</b><p>A "Restore my purchase" button that rechecks the store receipt, plus a 24 hour human reply for payers. Point payment review replies to it.</p><p class="m">Watch: weekly "Pro not active" and refund reviews, refund requests</p></div>
+      <div class="card"><span class="k">2 · Ads</span><b>State the free limit up front</b><p>India ad and store copy that says what is free, A/B tested against current creatives. Some reviewers say ads promised "free".</p><p class="m">Watch: install to paid, D7, refund asks, 1 star share of new installs</p></div>
+      <div class="card"><span class="k">3 · Intermediate learners</span><b>2 minute level check</b><p>Let intermediate users skip basics, and build India creatives on reviewers' own words: confidence and interviews.</p><p class="m">Watch: D7 of self-rated intermediates, CTR of "confidence" vs "fluency" hooks</p></div>
+      <div class="card"><span class="k">4 · Onboarding</span><b>Fix the intro question</b><p>3 people got stuck on "can you tell me about yourself?" between 5 Oct and 10 Nov, with no option to write or speak.</p><p class="m">Watch: install to first lesson</p></div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  <b style="color:var(--ink2)">Method and limits</b>
+  <ul id="limits"></ul>
+  <p style="margin-top:12px">Code: <code>fetch.py</code>, <code>fetch_appstore.py</code> (pull reviews), <code>themes.py</code> (keyword rules), <code>analyze.py</code>, <code>alert.py</code> (weekly alert). Data on this page: <code>web/data.json</code>, built by <code>web/export.py</code> from <code>out/summary.json</code>, <code>out/quotes.json</code> and the alert output; store listing and retention figures from <code>REPORT.html</code>.</p>
+</div></footer>
+<div id="tip" role="tooltip"></div>
+
+<script src="data.js"></script>
+<script>
+const THEME = {
+  bugs_stuck:"Bugs, freezes, slow loading", paywall_price:"Paywall early, or not worth the price", ai_speech_quality:"AI did not hear or correct them",
+  support_no_reply:"Support never replied", content_basic_repetitive:"Content too basic or repetitive", ad_mismatch:"Felt misled by ads or social media",
+  paid_not_unlocked:"Paid but Pro not active, or charged after cancelling", refund_ask:"Asked for a refund", account_device:"Account or device problems",
+  onboarding_stuck:"Stuck on the onboarding intro question"
+};
+const PRAISE = {speaking_fluency:"Speaking and fluency", confidence:"Confidence", interview_job_ielts:"Interviews, jobs, IELTS", grammar_vocab:"Grammar and vocabulary",
+  sarah_ai_partner:"Sarah, the AI partner", pronunciation:"Pronunciation", price_value:"Worth the price", feedback_report:"Feedback report"};
+const fmt = n => Number(n).toLocaleString("en-US");
+const pc = (x, d=1) => (x*100).toFixed(d) + "%";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const dt = s => { const [y,m,d] = s.split("-"); return `${+d} ${MON[m-1]} ${y}`; };
+const stars = n => `<span class="stars" aria-label="${n} stars">${"★".repeat(n)}<span class="off">${"★".repeat(5-n)}</span></span>`;
+const tip = document.getElementById("tip");
+function hover(el, text){
+  el.addEventListener("mousemove", e => { tip.textContent = text; tip.style.opacity = 1; tip.style.left = Math.min(e.clientX + 12, innerWidth - 270) + "px"; tip.style.top = (e.clientY + 14) + "px"; });
+  el.addEventListener("mouseleave", () => tip.style.opacity = 0);
+}
+
+function render(D){
+  const P = D.summary.play, I = D.summary.ios_in, R = D.report, A = D.alert;
+  document.getElementById("lede").innerHTML = `The founders call retention P0, and India D30 (${R.d30.india_to}%) trails Indonesia (${R.d30.indonesia}%) and LATAM (${R.d30.latam}%). Store reviews are a free, daily signal on why people leave. I read ${fmt(P.fetched)} Play and ${I.fetched} App Store India reviews.`;
+  document.getElementById("meta").innerHTML = [`Snapshot ${R.snapshot}`, `Play: ${dt(P.date_from)} to ${dt(P.date_to)}`, `Focus window: 20 May to 19 Nov 2026`, `Play listing ${R.play_listing.stars}★, ${R.play_listing.ratings} ratings`].map(t => `<span class="chip">${t}</span>`).join("");
+
+  // half-year columns
+  const H = P.half_year_low_share, keys = Object.keys(H), mx = Math.max(...keys.map(k => H[k].mean));
+  const lab = {"2024H2":["Jul–Dec","2024"],"2025H1":["Jan–Jun","2025"],"2025H2":["Jul–Dec","2025"],"2026H1":["Jan–Jun","2026"],"2026H2":["Jul–Nov","2026"]};
+  const cols = document.getElementById("cols");
+  cols.innerHTML = keys.map((k,i) => `<div class="col${i===keys.length-1?" last":""}" data-t="${lab[k].join(" ")}: ${pc(H[k].mean)} of ${fmt(H[k].size)} reviews at 1 to 2 stars"><span class="v">${pc(H[k].mean)}</span><div class="b" style="height:${(H[k].mean/mx*78).toFixed(1)}%"></div></div>`).join("");
+  cols.querySelectorAll(".col").forEach(c => hover(c, c.dataset.t));
+  document.getElementById("xl").innerHTML = keys.map(k => `<span><b>${lab[k][0]}</b>${lab[k][1]} · ${fmt(H[k].size)}</span>`).join("");
+
+  const nLow = P.low_unique_5plus_words;
+  document.getElementById("stats").innerHTML = [
+    {label:"Play reviews in focus window", value:fmt(P.reviews_in_window), sub:"20 May to 19 Nov 2026"},
+    {label:"At 1 to 2 stars", value:pc(P.low_share_in_window), sub:`${P.low_in_window} reviews; ${nLow} unique with 5+ words tagged`},
+    {label:"Unhappy reviewers who say they paid", value:pc(P.low_says_they_paid.pct/100), sub:`${P.low_says_they_paid.n} of ${nLow} on Play; ${I.low_says_they_paid.n} of ${I.low} on App Store India`, hl:true},
+    {label:"Money or support reviews told to email", value:`${R.replies_asking_email} of ${R.money_support_reviews}`, sub:"store reply asks them to email support, often the channel they said went unanswered"},
+    {label:"Unhappy reviews with a store reply", value:pc(P.low_replied_pct/100,0), sub:`all ${P.low_unique_texts} unique 1 to 2 star Play reviews in the window; where the reply sends them is the gap`},
+  ].map(s => `<div class="card stat${s.hl?" hl":""}"><div class="label">${s.label}</div><div class="value">${s.value}</div><div class="sub">${s.sub}</div></div>`).join("");
+  document.getElementById("cav").innerHTML = `Sample caveat: newest reviews, not a random sample, and unhappy people write more, so shares describe reviewers, not all users. Themes are keyword rules; ${P.untagged_pct}% of unhappy reviews matched no theme. App Store India has only ${I.low} unhappy reviews. Real rates need Stimuler's payment and support logs.`;
+
+  // explorer
+  const sources = {
+    play:{label:"Google Play", n:nLow, themes:P.complaints, payers:P.themes_among_payers, quotes:D.quotes.play},
+    ios:{label:"App Store India", n:I.low, themes:I.complaints, payers:null, quotes:D.quotes.ios_in}
+  };
+  const srcEl = document.getElementById("src");
+  srcEl.innerHTML = Object.entries(sources).map(([k,s]) => `<button role="tab" data-k="${k}" aria-selected="${k==="play"}">${s.label}<span class="c">${s.n}</span></button>`).join("");
+  let cur = "play", sel = "bugs_stuck";
+  function showSrc(){
+    const s = sources[cur], ks = Object.keys(s.themes).sort((a,b) => s.themes[b].n - s.themes[a].n), max = s.themes[ks[0]].n;
+    srcEl.querySelectorAll("button").forEach(b => b.setAttribute("aria-selected", b.dataset.k===cur));
+    document.getElementById("tlist").innerHTML = `<div class="thead"><span>Theme</span><span style="text-align:right">Reviews</span><span style="text-align:right">Share</span></div>` +
+      ks.map(k => `<button class="trow" data-k="${k}" aria-pressed="${k===sel}"><span><span class="n">${THEME[k]}</span><div class="track"><div class="fill" style="width:${(s.themes[k].n/max*100).toFixed(1)}%"></div></div></span><span class="num">${s.themes[k].n}</span><span class="pct">${s.themes[k].pct}%</span></button>`).join("");
+    showTheme();
+  }
+  function showTheme(){
+    const s = sources[cur], t = s.themes[sel], q = (s.quotes[sel] || []);
+    document.querySelectorAll(".trow").forEach(r => r.setAttribute("aria-pressed", r.dataset.k===sel));
+    const kv = [`<span><b>${t.n}</b> of ${s.n} unhappy ${s.label} reviews (${t.pct}%)</span>`];
+    if (s.payers) kv.push(`<span><b>${s.payers[sel].pct}%</b> of the ${P.low_says_they_paid.n} who say they paid</span>`);
+    const lm = cur==="play" && P.low_share_when_mentioned[sel];
+    if (lm) kv.push(`<span>Of <b>${lm.mentions}</b> window reviews that mention it, <b>${pc(lm.low_share,0)}</b> are 1 to 2 stars</span>`);
+    document.getElementById("detail").innerHTML = `<h3>${THEME[sel]}</h3><div class="kv">${kv.join("")}</div>` +
+      (q.length ? q.map(x => `<div class="quote"><p>“${esc(x.text)}”</p><div class="qm">${stars(x.stars)}<span>${dt(x.date)}</span><span>${s.label}</span></div></div>`).join("")
+                : `<p class="empty">No review quotes saved for this theme on ${s.label}.</p>`);
+  }
+  document.getElementById("tlist").addEventListener("click", e => { const r = e.target.closest(".trow"); if (r){ sel = r.dataset.k; showTheme(); } });
+  srcEl.addEventListener("click", e => { const b = e.target.closest("button"); if (b){ cur = b.dataset.k; showSrc(); } });
+  showSrc();
+
+  // praise
+  document.getElementById("happy-hint").textContent = `${fmt(P.happy_5plus_words)} happy (4 to 5 star) Play reviews with 5+ words in the window`;
+  const pk = Object.keys(P.praise).sort((a,b) => P.praise[b].n - P.praise[a].n), pmax = P.praise[pk[0]].n;
+  const pr = document.getElementById("praise");
+  pr.innerHTML = pk.map(k => `<div class="hbar" data-t="${P.praise[k].n} of ${fmt(P.happy_5plus_words)} happy reviews mention ${PRAISE[k].toLowerCase()}"><span class="t">${PRAISE[k]}</span><div class="track"><div class="fill" style="width:${(P.praise[k].n/pmax*100).toFixed(1)}%"></div></div><span class="v">${P.praise[k].n} <small>${P.praise[k].pct}%</small></span></div>`).join("");
+  pr.querySelectorAll(".hbar").forEach(b => hover(b, b.dataset.t));
+  document.getElementById("liked").innerHTML = R.most_liked.map(m => `Most liked (${m.thumbs} thumbs, ${m.date}): “${esc(m.text)}”`).join("<br>") +
+    `<br><span style="color:var(--muted)">Who unhappy reviewers compare to: ChatGPT, Gemini or Claude in ${R.chatbots_named}, Duolingo in ${R.duolingo_named}; none named ELSA, Praktika or Loora.</span>`;
+
+  // alert
+  document.getElementById("alert-hint").textContent = `alert.py on the week ${dt(A.from)} to ${dt(A.to)}. Flags a spike at 3+ reviews and 2x the usual week.`;
+  document.getElementById("alert-top").innerHTML = `<div><b>${A.reviews}</b>reviews this week</div><div><b>${A.low}</b>at 1 to 2 stars</div><div><b>${pc(A.low_share)}</b>low share (4 weeks before: ${pc(A.prev4_share)})</div><div><b>${A.payers_need_human}</b>payers needing a human</div>`;
+  document.getElementById("alert-rows").innerHTML = A.rows.slice().sort((a,b) => b.week - a.week || b.avg - a.avg).slice(0,6).map(r => `<tr><td>${THEME[r.theme]}</td><td class="r${r.week > r.avg ? " up" : ""}">${r.week}</td><td class="r">${r.avg}</td></tr>`).join("");
+  document.getElementById("alert-foot").innerHTML = `Spikes this week: <b>${A.spikes}</b>. On earlier weeks of this snapshot it flagged ${R.earlier_alert_flags.join(" and ")}. ${R.tests} tests pass.`;
+
+  document.getElementById("limits").innerHTML = [
+    `Google Play: ${fmt(P.fetched)} newest reviews (English feed, country India), ${dt(P.date_from)} to ${dt(P.date_to)}. Focus window 20 May to 19 Nov 2026: ${fmt(P.reviews_in_window)} reviews, ${P.low_in_window} at 1 to 2 stars.`,
+    `App Store India (Apple RSS): ${I.fetched} newest written reviews, ${dt(I.date_from)} to ${dt(I.date_to)}, ${I.low} at 1 to 2 stars. Listing ${R.ios_listing.stars}★ from ${R.ios_listing.ratings} ratings.`,
+    `The English Play feed also returns Spanish and Indonesian reviews (${P.low_lang_mix.spanish + P.low_lang_mix.indonesian} of the ${nLow}), so this is not India only.`,
+    `Themes are keyword rules (English, Hinglish, Spanish, Indonesian). ${R.hand_check}`,
+    `Retention figures are from a founder's public post (${R.d30.source}). Review text is what users say, not verified account data.`
+  ].map(t => `<li>${esc(t)}</li>`).join("");
+}
+if (location.protocol.startsWith("http")) fetch("data.json").then(r => r.json()).then(render).catch(() => render(window.DATA));
+else render(window.DATA);
+</script>
+</body>
+</html>
