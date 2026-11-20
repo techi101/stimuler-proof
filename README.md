@@ -2,6 +2,8 @@
 
 ![Review Pulse demo page](docs/screenshot_1440.png)
 
+**Try it live:** https://stimuler-proof.vercel.app · **Code:** https://github.com/techi101/stimuler-proof
+
 - **Problem:** Stimuler's founders call retention P0, and India D30 (8.7%) trails Indonesia (12.6%) and LATAM (14.2%) (Akshay Akash, Sep 2026). Store reviews are a free, daily signal on why people leave.
 - **Result:** 96 of 275 unhappy Play reviewers (34.9%) say they paid, and 45 of the 46 store replies to "paid but no Pro" or "no reply" reviews ask the user to email support, often the channel the review says went unanswered.
 - **Demo page:** open `web/index.html` in a browser (no install, no server), or run `python -m http.server -d web` and visit http://localhost:8000. Mobile view: [docs/screenshot_390.png](docs/screenshot_390.png). The full write-up is `REPORT.html` / `REPORT.pdf`.
