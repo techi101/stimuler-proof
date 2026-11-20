@@ -3,3 +3,4 @@ data/*.csv
 out/*.csv
 out/run.log
 .pytest_cache/
+FOLLOWUP_DRAFT.txt
