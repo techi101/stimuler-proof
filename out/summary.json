@@ -1,0 +1,529 @@
+{
+ "play": {
+  "fetched": 6000,
+  "date_from": "2024-09-12",
+  "date_to": "2026-11-19",
+  "window": "2026-05-20 to 2026-11-19",
+  "reviews_in_window": 2893,
+  "low_in_window": 325,
+  "low_share_in_window": 0.112,
+  "low_unique_texts": 323,
+  "low_unique_5plus_words": 275,
+  "monthly_low_share": {
+   "2024-09": {
+    "n": 102,
+    "low_share": 0.235
+   },
+   "2024-10": {
+    "n": 85,
+    "low_share": 0.282
+   },
+   "2024-11": {
+    "n": 79,
+    "low_share": 0.278
+   },
+   "2024-12": {
+    "n": 151,
+    "low_share": 0.192
+   },
+   "2025-01": {
+    "n": 136,
+    "low_share": 0.25
+   },
+   "2025-02": {
+    "n": 89,
+    "low_share": 0.213
+   },
+   "2025-03": {
+    "n": 104,
+    "low_share": 0.221
+   },
+   "2025-04": {
+    "n": 97,
+    "low_share": 0.165
+   },
+   "2025-05": {
+    "n": 144,
+    "low_share": 0.222
+   },
+   "2025-06": {
+    "n": 136,
+    "low_share": 0.213
+   },
+   "2025-07": {
+    "n": 131,
+    "low_share": 0.198
+   },
+   "2025-08": {
+    "n": 152,
+    "low_share": 0.145
+   },
+   "2025-09": {
+    "n": 113,
+    "low_share": 0.177
+   },
+   "2025-10": {
+    "n": 135,
+    "low_share": 0.207
+   },
+   "2025-11": {
+    "n": 146,
+    "low_share": 0.205
+   },
+   "2025-12": {
+    "n": 153,
+    "low_share": 0.124
+   },
+   "2026-01": {
+    "n": 227,
+    "low_share": 0.181
+   },
+   "2026-02": {
+    "n": 167,
+    "low_share": 0.138
+   },
+   "2026-03": {
+    "n": 274,
+    "low_share": 0.179
+   },
+   "2026-04": {
+    "n": 281,
+    "low_share": 0.196
+   },
+   "2026-05": {
+    "n": 411,
+    "low_share": 0.153
+   },
+   "2026-06": {
+    "n": 535,
+    "low_share": 0.09
+   },
+   "2026-07": {
+    "n": 522,
+    "low_share": 0.123
+   },
+   "2026-08": {
+    "n": 489,
+    "low_share": 0.098
+   },
+   "2026-09": {
+    "n": 495,
+    "low_share": 0.139
+   },
+   "2026-10": {
+    "n": 406,
+    "low_share": 0.116
+   },
+   "2026-11": {
+    "n": 240,
+    "low_share": 0.1
+   }
+  },
+  "half_year_low_share": {
+   "2024H2": {
+    "size": 417,
+    "mean": 0.237
+   },
+   "2025H1": {
+    "size": 706,
+    "mean": 0.217
+   },
+   "2025H2": {
+    "size": 830,
+    "mean": 0.175
+   },
+   "2026H1": {
+    "size": 1895,
+    "mean": 0.147
+   },
+   "2026H2": {
+    "size": 2152,
+    "mean": 0.117
+   }
+  },
+  "complaints": {
+   "paid_not_unlocked": {
+    "n": 17,
+    "pct": 6.2
+   },
+   "support_no_reply": {
+    "n": 36,
+    "pct": 13.1
+   },
+   "refund_ask": {
+    "n": 16,
+    "pct": 5.8
+   },
+   "paywall_price": {
+    "n": 53,
+    "pct": 19.3
+   },
+   "content_basic_repetitive": {
+    "n": 25,
+    "pct": 9.1
+   },
+   "ai_speech_quality": {
+    "n": 48,
+    "pct": 17.5
+   },
+   "bugs_stuck": {
+    "n": 74,
+    "pct": 26.9
+   },
+   "account_device": {
+    "n": 8,
+    "pct": 2.9
+   },
+   "onboarding_stuck": {
+    "n": 5,
+    "pct": 1.8
+   },
+   "ad_mismatch": {
+    "n": 21,
+    "pct": 7.6
+   }
+  },
+  "untagged_pct": 18.9,
+  "low_lang_mix": {
+   "english": 233,
+   "indonesian": 18,
+   "spanish": 16,
+   "hinglish": 8
+  },
+  "low_says_they_paid": {
+   "n": 96,
+   "pct": 34.9
+  },
+  "themes_among_payers": {
+   "paid_not_unlocked": {
+    "n": 17,
+    "pct": 17.7
+   },
+   "support_no_reply": {
+    "n": 20,
+    "pct": 20.8
+   },
+   "refund_ask": {
+    "n": 11,
+    "pct": 11.5
+   },
+   "paywall_price": {
+    "n": 20,
+    "pct": 20.8
+   },
+   "content_basic_repetitive": {
+    "n": 12,
+    "pct": 12.5
+   },
+   "ai_speech_quality": {
+    "n": 15,
+    "pct": 15.6
+   },
+   "bugs_stuck": {
+    "n": 28,
+    "pct": 29.2
+   },
+   "account_device": {
+    "n": 3,
+    "pct": 3.1
+   },
+   "onboarding_stuck": {
+    "n": 0,
+    "pct": 0.0
+   },
+   "ad_mismatch": {
+    "n": 7,
+    "pct": 7.3
+   }
+  },
+  "refund_ask_co_themes": {
+   "paid_not_unlocked": {
+    "n": 2,
+    "pct": 12.5
+   },
+   "support_no_reply": {
+    "n": 6,
+    "pct": 37.5
+   },
+   "paywall_price": {
+    "n": 1,
+    "pct": 6.2
+   },
+   "content_basic_repetitive": {
+    "n": 1,
+    "pct": 6.2
+   },
+   "ai_speech_quality": {
+    "n": 3,
+    "pct": 18.8
+   },
+   "bugs_stuck": {
+    "n": 2,
+    "pct": 12.5
+   },
+   "account_device": {
+    "n": 0,
+    "pct": 0.0
+   },
+   "onboarding_stuck": {
+    "n": 0,
+    "pct": 0.0
+   },
+   "ad_mismatch": {
+    "n": 1,
+    "pct": 6.2
+   }
+  },
+  "competitor_mentions_low": {
+   "chatgpt": 6,
+   "gemini": 2,
+   "claude": 2,
+   "duolingo": 8,
+   "magnetic": 1
+  },
+  "competitor_mentions_all_window": {
+   "chatgpt": 6,
+   "gemini": 3,
+   "claude": 2,
+   "duolingo": 9,
+   "magnetic": 1
+  },
+  "low_share_when_mentioned": {
+   "support_no_reply": {
+    "mentions": 41,
+    "low_share": 0.878
+   },
+   "paywall_price": {
+    "mentions": 81,
+    "low_share": 0.679
+   },
+   "content_basic_repetitive": {
+    "mentions": 97,
+    "low_share": 0.258
+   },
+   "ai_speech_quality": {
+    "mentions": 65,
+    "low_share": 0.754
+   },
+   "bugs_stuck": {
+    "mentions": 106,
+    "low_share": 0.745
+   },
+   "ad_mismatch": {
+    "mentions": 26,
+    "low_share": 0.808
+   }
+  },
+  "happy_5plus_words": 992,
+  "praise": {
+   "confidence": {
+    "n": 28,
+    "pct": 2.8
+   },
+   "speaking_fluency": {
+    "n": 97,
+    "pct": 9.8
+   },
+   "pronunciation": {
+    "n": 17,
+    "pct": 1.7
+   },
+   "grammar_vocab": {
+    "n": 19,
+    "pct": 1.9
+   },
+   "feedback_report": {
+    "n": 8,
+    "pct": 0.8
+   },
+   "sarah_ai_partner": {
+    "n": 18,
+    "pct": 1.8
+   },
+   "interview_job_ielts": {
+    "n": 21,
+    "pct": 2.1
+   },
+   "price_value": {
+    "n": 11,
+    "pct": 1.1
+   }
+  },
+  "low_replied_pct": 100.0,
+  "top_reply_openings": {
+   "Apologies for the inconvenience! We'd really like to underst": 17,
+   "Appreciate your feedback! We do offer free introductory less": 17,
+   "Appreciate your feedback. We'd really like to understand wha": 13
+  },
+  "by_version_n60": {
+   "2.3.267": {
+    "n": 143,
+    "low_share": 0.098,
+    "bug_share": 0.042
+   },
+   "2.3.268": {
+    "n": 66,
+    "low_share": 0.076,
+    "bug_share": 0.03
+   },
+   "2.4.1": {
+    "n": 62,
+    "low_share": 0.097,
+    "bug_share": 0.032
+   },
+   "2.4.10": {
+    "n": 111,
+    "low_share": 0.054,
+    "bug_share": 0.018
+   },
+   "2.4.12": {
+    "n": 101,
+    "low_share": 0.079,
+    "bug_share": 0.04
+   },
+   "2.4.15": {
+    "n": 74,
+    "low_share": 0.162,
+    "bug_share": 0.014
+   },
+   "2.4.16": {
+    "n": 82,
+    "low_share": 0.073,
+    "bug_share": 0.024
+   },
+   "2.4.18": {
+    "n": 65,
+    "low_share": 0.015,
+    "bug_share": 0.0
+   },
+   "2.4.19": {
+    "n": 99,
+    "low_share": 0.071,
+    "bug_share": 0.02
+   },
+   "2.4.2": {
+    "n": 123,
+    "low_share": 0.098,
+    "bug_share": 0.081
+   },
+   "2.4.21": {
+    "n": 78,
+    "low_share": 0.167,
+    "bug_share": 0.051
+   },
+   "2.4.23": {
+    "n": 61,
+    "low_share": 0.115,
+    "bug_share": 0.033
+   },
+   "2.4.25": {
+    "n": 83,
+    "low_share": 0.133,
+    "bug_share": 0.024
+   },
+   "2.4.26": {
+    "n": 98,
+    "low_share": 0.061,
+    "bug_share": 0.031
+   },
+   "2.4.27": {
+    "n": 94,
+    "low_share": 0.149,
+    "bug_share": 0.085
+   },
+   "2.4.29": {
+    "n": 75,
+    "low_share": 0.12,
+    "bug_share": 0.027
+   },
+   "2.4.31": {
+    "n": 64,
+    "low_share": 0.109,
+    "bug_share": 0.047
+   },
+   "2.4.34": {
+    "n": 72,
+    "low_share": 0.125,
+    "bug_share": 0.042
+   },
+   "2.4.35": {
+    "n": 105,
+    "low_share": 0.076,
+    "bug_share": 0.019
+   },
+   "2.4.39": {
+    "n": 151,
+    "low_share": 0.106,
+    "bug_share": 0.02
+   },
+   "2.4.5": {
+    "n": 66,
+    "low_share": 0.076,
+    "bug_share": 0.091
+   },
+   "2.4.6": {
+    "n": 60,
+    "low_share": 0.1,
+    "bug_share": 0.0
+   },
+   "unknown": {
+    "n": 233,
+    "low_share": 0.339,
+    "bug_share": 0.077
+   }
+  }
+ },
+ "ios_in": {
+  "fetched": 134,
+  "date_from": "2024-02-09",
+  "date_to": "2026-11-18",
+  "low": 64,
+  "low_share": 0.478,
+  "complaints": {
+   "paid_not_unlocked": {
+    "n": 4,
+    "pct": 6.2
+   },
+   "support_no_reply": {
+    "n": 13,
+    "pct": 20.3
+   },
+   "refund_ask": {
+    "n": 4,
+    "pct": 6.2
+   },
+   "paywall_price": {
+    "n": 11,
+    "pct": 17.2
+   },
+   "content_basic_repetitive": {
+    "n": 9,
+    "pct": 14.1
+   },
+   "ai_speech_quality": {
+    "n": 8,
+    "pct": 12.5
+   },
+   "bugs_stuck": {
+    "n": 19,
+    "pct": 29.7
+   },
+   "account_device": {
+    "n": 4,
+    "pct": 6.2
+   },
+   "onboarding_stuck": {
+    "n": 1,
+    "pct": 1.6
+   },
+   "ad_mismatch": {
+    "n": 6,
+    "pct": 9.4
+   }
+  },
+  "low_says_they_paid": {
+   "n": 29,
+   "pct": 45.3
+  }
+ }
+}

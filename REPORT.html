@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Stimuler Review Brief</title>
+<style>
+@page { size: A4; margin: 9mm 10mm; }
+body { font: 8.1pt/1.28 "Segoe UI", Arial, sans-serif; color: #1d2330; margin: 0; }
+h1 { font-size: 13pt; margin: 0 0 2px; } h2 { font-size: 9.6pt; margin: 7px 0 3px; color: #2a3f8f; }
+.sub { color: #5a6275; margin-bottom: 4px; }
+table { border-collapse: collapse; width: 100%; margin: 2px 0; } td, th { border-bottom: 1px solid #e3e6ee; padding: 1.5px 4px; text-align: left; vertical-align: top; }
+th { background: #f2f4f9; font-weight: 600; } td.n { text-align: right; white-space: nowrap; } q { font-style: italic; color: #39425a; }
+p { margin: 2px 0 4px; } ul { margin: 2px 0; padding-left: 15px; } a { color: #2a3f8f; } code { font-size: 8pt; }
+</style></head><body>
+<h1>Stimuler: what unhappy reviewers say, and four things a growth intern could test</h1>
+<div class="sub">Snapshot 20 Nov 2026. Public store reviews plus the founders' public posts. Review text is what users say, not verified account data.</div>
+
+<h2>Why look at this</h2>
+<p>The founders say retention is P0 and India trails their other big markets: India D30 retention went from 3.8% to 8.7%, against 12.6% in Indonesia and 14.2% in LATAM (<a href="https://www.linkedin.com/posts/akshay-akash_heres-the-400-words-product-growth-playbook-activity-7505164008958640128-BV_h">Akshay Akash, Sep 2026</a>). His Oct 2026 post: <q>Certain geos like India we were just not able to breakthrough despite multiple attempts</q> (<a href="https://www.linkedin.com/posts/akshay-akash_sharing-a-few-highlights-from-our-2yrs-activity-7518592742441107456-NCn0">post</a>). Store reviews are a free, daily signal on why people leave.</p>
+
+<h2>Data</h2>
+<table><tr><th>Source</th><th>What I pulled</th></tr>
+<tr><td>Google Play <code>com.stimuler</code> (English, country India)</td><td>6,000 newest reviews, 12 Sep 2024 to 19 Nov 2026. Listing: 4.57 stars, 232,987 ratings, 10M+ installs, in-app items ₹99 to ₹3,999</td></tr>
+<tr><td>Focus window: 20 May to 19 Nov 2026</td><td>2,893 reviews, 325 at 1 to 2 stars (11.2%); 275 unique texts with 5+ words tagged</td></tr>
+<tr><td>App Store India (Apple RSS)</td><td>134 newest written reviews, 9 Feb 2024 to 18 Nov 2026, 64 at 1 to 2 stars. Listing: 4.71 stars, 10,211 ratings</td></tr></table>
+<p>Good news first: the 1 to 2 star share of Play reviews fell every half year, from 23.7% (Jul to Dec 2024, 417 reviews) to 11.7% (Jul to Nov 2026, 2,152 reviews).</p>
+
+<h2>What the 275 unhappy Play reviews are about (a review can hit several themes)</h2>
+<table><tr><th>Theme</th><th>Reviews</th><th>Share</th><th>Example (date, stars)</th></tr>
+<tr><td>Bugs, freezes, slow loading</td><td class="n">74</td><td class="n">26.9%</td><td><q>I took subscription and after that it's not working properly not even for a minute automatically getting closed</q> (17 Nov, 1)</td></tr>
+<tr><td>Paywall early, or not worth the price</td><td class="n">53</td><td class="n">19.3%</td><td><q>Wow, everything is under the pay wall now!</q> (16 Aug, 1)</td></tr>
+<tr><td>AI did not hear or correct them</td><td class="n">48</td><td class="n">17.5%</td><td><q>Sarah ai is worst ... the free version of chat gpt or claude are way better</q> (11 Nov, 1)</td></tr>
+<tr><td>Support never replied</td><td class="n">36</td><td class="n">13.1%</td><td><q>mailed them 2 times. in app contact 2 times. but no response</q> (11 Nov, 1)</td></tr>
+<tr><td>Content too basic or repetitive</td><td class="n">25</td><td class="n">9.1%</td><td><q>I don't need beginner-level lessons, and there's no way to skip them</q> (6 Sep, 2)</td></tr>
+<tr><td>Felt misled by ads or social media</td><td class="n">21</td><td class="n">7.6%</td><td><q>They said no charges in the advertisement but are taking money.</q> (9 Jun, 2)</td></tr>
+<tr><td>Paid but Pro not active, or charged after cancelling</td><td class="n">17</td><td class="n">6.2%</td><td><q>2 time my money got deducted ... but pro version is not reflecting in my profile</q> (4 Aug, 1)</td></tr>
+<tr><td>Asked for a refund</td><td class="n">16</td><td class="n">5.8%</td><td></td></tr>
+<tr><td>Stuck on the onboarding intro question</td><td class="n">5</td><td class="n">1.8%</td><td><q>stucked at can you tell me about yourself ? no option of writing or speaking</q> (10 Nov, 1)</td></tr></table>
+<p>18.9% matched no theme. Hand check of 10 random reviews per main theme: about 9 in 10 right for bugs, AI, support and payment; lower for the ad theme.</p>
+
+<h2>Four findings</h2>
+<p><b>1. Paying users are a third of the angry reviews, and the reply sends them back to the channel that failed.</b> 96 of 275 (34.9%) say they paid; their top issues are bugs (31%), value for money (26%), no support reply (21%) and Pro not active (18%). Of 46 reviews about "paid but no Pro" or "no reply", 39 got a store reply pointing to an email address, while the review says email went unanswered. On iOS, 29 of 64 unhappy reviews say they paid.</p>
+<p><b>2. Some ads set a "free" expectation the paywall breaks.</b> Four App Store India one star reviews name Instagram or social ads, e.g. <q>Downloaded this after getting spammed by really good Instagram ads ... I got the one year Pro subscription for ₹999</q> (18 Oct) and <q>they have claimed it is completely free. However, once you arrive here, they demand payment</q> (1 Jun).</p>
+<p><b>3. Intermediate learners get bored, while happy users talk about confidence and jobs.</b> 25 complaints say lessons are too basic or repeat. In 992 happy (4 to 5 star) reviews with 5+ words: speaking or fluency 97, confidence 28, interviews, jobs or IELTS 21. Most liked 5 star review in the window (67 thumbs, 5 Jul): <q>my main problem in English language is speaking</q>; most liked one about confidence (18 thumbs, 6 Aug): <q>i feel very confident</q>.</p>
+<p><b>4. Free chatbots are the comparison.</b> ChatGPT, Gemini or Claude are named in 7 unhappy reviews, Duolingo in 8; none in the window named ELSA, Praktika or Loora.</p>
+
+<h2>What I would test</h2>
+<table><tr><th>#</th><th>Experiment</th><th>Evidence</th><th>Measure</th></tr>
+<tr><td>1</td><td>Paid user fast lane: "Restore my purchase" button that rechecks the store receipt, plus a 24 hour human reply for payers; point payment review replies to it</td><td>Finding 1</td><td>Weekly "Pro not active" and refund reviews; refund requests</td></tr>
+<tr><td>2</td><td>India ad and store copy that states the free limit up front, A/B against current creatives</td><td>Finding 2; India D30 gap</td><td>Install to paid, D7, refund asks, 1 star share of new installs</td></tr>
+<tr><td>3</td><td>2 minute level check so intermediate users skip basics; India creatives built on reviewers' words (confidence, interviews)</td><td>Finding 3</td><td>D7 of self rated intermediates; CTR of "confidence" vs "fluency" hooks</td></tr>
+<tr><td>4</td><td>Fix the intro question 3 people got stuck on between 5 Oct and 10 Nov</td><td>Onboarding theme</td><td>Install to first lesson</td></tr></table>
+
+<h2>Tool: weekly review alert (<code>alert.py</code>, 13 tests pass)</h2>
+<p>Tags the last 7 days, compares each theme with the 4 weeks before, flags spikes (3+ reviews and 2x the usual week), and lists payers with money or support problems for a human to reach first. On this snapshot it flagged AI speech complaints in the week to 12 Nov and paywall complaints in the week to 29 Oct.</p>
+
+<h2>Limits</h2>
+<ul><li>Newest reviews, not a random sample; unhappy people write more, so shares describe reviewers, not all users.</li>
+<li>The English Play feed also returns Spanish and Indonesian reviews (34 of the 275), so this is not India only.</li>
+<li>Themes are keyword rules (English, Hinglish, Spanish, Indonesian). Real rates need Stimuler's payment and support logs. iOS sample is small. Reddit and Trustpilot gave nothing usable.</li></ul>
+</body></html>
