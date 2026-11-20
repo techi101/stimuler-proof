@@ -61,7 +61,7 @@ A review can hit several themes.
 ```
 pip install google-play-scraper pandas pytest
 python fetch.py com.stimuler 6000 data/stimuler.csv          # Google Play reviews
-python fetch_appstore.py <app_store_id> in data/appstore_in.csv   # App Store India RSS
+python fetch_appstore.py 1627501632 in data/appstore_in.csv   # App Store India RSS
 python analyze.py                                             # -> out/summary.json, out/quotes.json
 python alert.py data/stimuler.csv --today 2026-11-19          # weekly alert
 python -m pytest -q tests     # 13 tests
